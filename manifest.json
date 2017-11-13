@@ -1,0 +1,24 @@
+{
+    "update_url": "https://clients2.google.com/service/update2/crx",
+    "manifest_version": 2,
+    "name": "Font || kais ",
+    "version": "1.1",
+    "description": "Change font",
+    "permissions": [
+        "https://twitter.com/*", 
+        "http://twitter.com/*"
+    ],
+    "content_scripts": [
+
+        {
+            "matches": [ "https://twitter.com/*", 
+        "http://twitter.com/*"],
+            "js": ["web.js"],
+                "run_at": "document_idle",
+    "all_frames": false
+        }
+    ],
+"web_accessible_resources":[
+    "fonts/*"
+    ]
+}
